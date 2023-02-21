@@ -1,0 +1,44 @@
+:root {
+  --icon2: clamp(14rem, 1vw + 5rem, 18rem);
+  --fs-300: clamp(1.6rem, 1.5vw + 0.5rem, 1.8rem);
+}
+
+.main-container-2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 30px;
+  max-width: 30%;
+  display: none;
+}
+
+.image-container-2 {
+  display: flex;
+  justify-content: center;
+}
+
+.img-2 {
+  width: var(--icon2);
+}
+.texts-container-2 {
+  max-width: 100%;
+}
+.h2p2 {
+  line-height: 30px;
+}
+
+.score {
+  font-size: var(--fs-300);
+  color: hsl(25, 97%, 53%);
+  background-color: hsl(218, 10%, 22%);
+  padding: 10px 10px;
+  border-radius: 20px;
+}
+
+@media (max-width: 768px) {
+  .main-container-2 {
+    max-width: 80%;
+    width: 75%;
+  }
+}

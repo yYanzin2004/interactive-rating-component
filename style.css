@@ -1,0 +1,154 @@
+:root {
+  --fs-700: clamp(1.8rem, 1.5vw + 0.5rem, 2.5rem);
+  --fs-500: clamp(1.2rem, 1.5vw + 0.5rem, 2rem);
+  --fs-400: clamp(1.3rem, 1.5vw + 0.5rem, 2rem);
+  --icon: clamp(2rem, 1vw + 1rem, 4rem);
+  --button: clamp(3.5rem, 4vw + 0.5rem, 5rem);
+}
+
+body {
+  background-color: hsl(216, 12%, 8%);
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Overpass", sans-serif;
+}
+p {
+  margin: 0px;
+}
+
+h1 {
+  margin: 0;
+  color: white;
+  font-size: var(--fs-700);
+  margin-bottom: 10px;
+}
+
+h2 {
+  margin: 0;
+  color: hsl(217, 12%, 63%);
+  font-size: var(--fs-400);
+  line-height: 20px;
+}
+
+.h2p1 {
+  line-height: 30px;
+}
+
+.attribution {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  font-size: var(--fs-400);
+  color: white;
+}
+
+a {
+  color: hsl(25, 97%, 53%);
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+.main-container,
+.main-container-2 {
+  background-image: linear-gradient(
+    to top,
+    hsl(212, 19%, 14%),
+    hsl(213, 19%, 18%)
+  );
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 25px;
+  width: 25%;
+  border-radius: 20px;
+}
+
+.image-container {
+  display: flex;
+  width: var(--icon);
+  background-color: hsl(213, 18%, 22%);
+  padding-bottom: 20px;
+  padding-top: 20px;
+  padding-left: 15px;
+  padding-right: 15px;
+  border-radius: 30px;
+  justify-content: center;
+  align-items: center;
+}
+
+img {
+  width: 70%;
+}
+
+.button-rating-cointainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.button-rating {
+  background-color: hsl(213, 18%, 22%);
+  border: none;
+  color: white;
+  font-size: var(--fs-500);
+  width: var(--button);
+  height: var(--button);
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.25s;
+}
+
+.rating-active {
+  background-color: hsl(25, 97%, 53%);
+}
+
+.rating-hover {
+  background-color: hsl(213, 14%, 38%);
+}
+
+.button-submit-container {
+  width: 100%;
+}
+
+.button-submit {
+  width: 100%;
+  font-size: var(--fs-400);
+  padding: 10px 0px;
+  letter-spacing: 5px;
+  border: none;
+  background-color: hsl(25, 97%, 53%);
+  color: white;
+  border-radius: 50px;
+  transition: background-color 0.25s;
+  cursor: pointer;
+}
+
+.button-submit:hover {
+  background-color: white;
+  color: hsl(25, 97%, 53%);
+}
+
+@media (max-width: 768px) {
+  .main-container {
+    width: 80%;
+    padding: 20px;
+  }
+  .attribution {
+    display: flex;
+    left: 0px;
+    justify-content: center;
+  }
+  .image-container {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 6px;
+    padding-right: 6px;
+  }
+}
